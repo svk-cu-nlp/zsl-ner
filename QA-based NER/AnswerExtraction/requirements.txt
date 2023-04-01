@@ -1,0 +1,6 @@
+numpy
+pysbd
+torch
+transformers
+sentence-transformers
+streamlit
