@@ -13,6 +13,10 @@ The zero-shot NER module in this repository uses a question-answering mechanism 
 
 # QA-Based NER
 The directory contain two modules _QuestionGeneration.ipynb_ and _AnswerExtraction_ folder. The _QuestionGeneration.ipynb_ generates the potential questions froma given set of entity types. For example, entity type set = ['Software', 'Hardware', 'Organization'] the possible questions will be 
-_What Software is mentioned?_
+[_What Software is mentioned?_
 _Which Hardware is mentioned?_
-_Which Organization is mentioned?_
+_Which Organization is mentioned?_]
+The _AnswerExtraction_ folder contains three python files. 
+1. question_answering.py: It is about t5 model based question answering mechanism.
+2. app.py: It is GUI platform to give the context and the question and get the answer from the context. It uses the _question_answering.py_ to initialize and run the t5 model for question answering.
+3. AnswerExtraction_GPT-3.py: It is the gpt-3 based question asnwering system that precisely analyze the context and answer the question that will be the intended named entity. If the entity is not present in the context, it simply says "Not Applicable".
