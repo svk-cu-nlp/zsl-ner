@@ -10,3 +10,6 @@ Zero-shot learning is a machine learning paradigm that enables a model to recogn
 ## Approach
 
 The zero-shot NER module in this repository uses a question-answering mechanism to perform NER. Given a text and a list of categories, the module generates a set of questions for each category and uses a pre-trained language model to answer those questions. The answers are then filtered to identify the entities that belong to the corresponding category. The module does not require any training data or manual annotation of entities.
+
+# QA-Based NER
+The directory contain two modules _QuestionGeneration.py_ and _AnswerExtraction_ folder. 
